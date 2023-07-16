@@ -97,7 +97,7 @@
             const response = await fetch("https://api.airvisual.com/v2/countries?key=66205f88-c35f-47bd-8595-566e9d40aba9");
             const jsonData = await response.json();
             for (let i = 0; i < jsonData.data.length; i++) {
-                listOfCountry += "<select>"
+                listOfCountry += "<select>";
                 listOfCountry += "<option>";
                 listOfCountry += jsonData.data[i].country;
                 listOfCountry += "</option>";
